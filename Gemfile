@@ -26,6 +26,15 @@ gem "paperclip", "~> 5.2.1"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
+gem :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+gem :development, :test do
+  gem 'sqlite3'
+end
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
