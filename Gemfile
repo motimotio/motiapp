@@ -24,6 +24,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem "paperclip", "~> 5.2.1"
 gem 'dropzonejs-rails'
+gem "figaro", "~> 1.1.0"
 
 
 group :development, :test do
