@@ -7,7 +7,8 @@ end
 
 
 gem 'rails', '~> 5.1.4'
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -26,14 +27,6 @@ gem "paperclip", "~> 5.2.1"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
-gem :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
-
-gem :development, :test do
-  gem 'sqlite3'
-end
 
 
 group :development, :test do
